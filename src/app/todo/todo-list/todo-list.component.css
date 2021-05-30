@@ -1,0 +1,82 @@
+ul {
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.font-title {
+  font-size: 1.1rem;
+  margin: 10px 0 5px 20px;
+}
+
+button {
+  font-size: 0.6rem;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 5px;
+  color: #f0f0f0;
+}
+
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-done {
+  border: 1px solid green;
+  border-radius: 4px;
+  background-color: darkgreen;
+}
+.btn-delete {
+  border: 1px solid #80002d;
+  border-radius: 4px;
+  background-color: #ac0028;
+}
+
+
+.btn-done:hover {
+  background-color: #007c00;
+  box-shadow: 2px 2px 15px #beff97;
+}
+.btn-delete:hover {
+  background-color: #c30132;
+  box-shadow: 2px 2px 15px #ffa8cc;
+}
+
+.list-custom {
+  border: 2px solid black;
+  box-shadow: 2px 2px 15px black;
+}
+
+.not-Done {
+  background-color: #ffffff;
+}
+
+
+.Done{
+  background-color: #545454;
+  color: #f0f0f0;
+  margin: 0 !important;
+  text-decoration: line-through;
+}
+
+
+span {
+  text-decoration: InfoText;
+}
+
+li:hover {
+  color: #3c3a3a;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+
+input {
+  background-color: #eaeaea;
+  outline: none;
+  border: none;
+  margin: 0 0 3px 8px;
+  border-bottom: 3px solid black;
+}

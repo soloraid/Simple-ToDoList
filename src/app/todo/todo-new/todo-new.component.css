@@ -1,0 +1,42 @@
+
+
+h3 {
+  display: inline-block;
+}
+
+
+input[type="search"] {
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 10%;
+  border-bottom: 2px solid black;
+  margin: 10px;
+}
+button {
+  color: #f0f0f0;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 4px;
+  background-color: darkgreen;
+  width: 10%;
+  height: 10%;
+  font-size: 1vw;
+}
+
+button:hover:enabled {
+  cursor: pointer;
+  background-color: #007c00;
+  box-shadow: 2px 2px 15px #beff97;
+}
+
+button:hover:disabled {
+  cursor: not-allowed;
+  box-shadow: 2px 2px 15px #beff90;
+}
+
+
+input[type="search"].ng-invalid.ng-touched {
+  border-bottom: 3px solid red;
+}
+

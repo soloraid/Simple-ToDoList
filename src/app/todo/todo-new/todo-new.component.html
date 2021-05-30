@@ -1,0 +1,9 @@
+<form #to_do="ngForm" (ngSubmit)="onSubmit(to_do)">
+  <input type="search" name="title" placeholder="toDo . . ." ngModel required>
+  <button type="submit" [disabled]="!to_do.valid">Submit</button>
+</form>
+
+
+
+
+

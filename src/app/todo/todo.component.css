@@ -1,0 +1,41 @@
+nav {
+  position: sticky;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100;
+  padding: 0 !important;
+  margin: -10px !important;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #26204f;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+span {
+  color: #34322b;
+  font-family: "Menlo";
+}
+
+
+a {
+  display: inline-block;
+  margin: 10px 10px 10px 30px;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #c7e0e0;
+}
+
+a:hover {
+  box-shadow: 2px 2px 15px #afa5fd;
+  background-color: #e0ffff;
+}

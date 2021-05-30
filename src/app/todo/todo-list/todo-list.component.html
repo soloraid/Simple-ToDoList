@@ -1,0 +1,37 @@
+<app-todo-new></app-todo-new>
+<ul class="list-custom" *ngFor="let element of toDoList; let i = index">
+  <li class="not-Done" *ngIf="!element.Done">
+    <div class="row">
+      <div class="col-md-9">
+        <span class="font-title" *ngIf="!editable[i]" >{{ element.title }} <mat-icon style="font-size: 12px;" (click)="assignEdit(true,i)">edit</mat-icon></span>
+        <div *ngIf="editable[i]">
+          <input type="text" placeholder="{{ element.title}}" [(ngModel)]="newTitle">
+          <button class="btn-delete" type="submit"
+                  (click)="editName(newTitle,element.id,i)"
+                  [disabled]="!newTitle">
+            <mat-icon>edit</mat-icon></button>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn-delete" type="button" (click)="omitTask(element)"><mat-icon>delete</mat-icon></button>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn-done" type="button" (click)="checkTask(element)"><mat-icon>done</mat-icon></button>
+      </div>
+    </div>
+  </li>
+  <li class="Done" *ngIf="element.Done">
+    <div class="row">
+      <div class="col-md-10">
+        <p class="font-title">{{ element.title }}</p>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn-delete" type="button" (click)="omitTask(element)"><mat-icon>delete</mat-icon></button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+
+
